@@ -337,6 +337,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 494743971}
     m_Modifications:
+    - target: {fileID: 5912602791092922577, guid: a57459da55d4cd443ae447b6017814a8, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5912602791829943424, guid: a57459da55d4cd443ae447b6017814a8, type: 3}
       propertyPath: m_Name
       value: Transition
@@ -493,7 +497,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1596719857}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de9d5819e1daa0f4ca85744b8da95457, type: 3}
   m_Name: 
@@ -520,7 +524,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1596719857}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e9fc5a62f05b6c4680c749049295fe9, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_HorizontalAxis: Horizontal
@@ -561,7 +565,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2037648043
 Transform:
   m_ObjectHideFlags: 0

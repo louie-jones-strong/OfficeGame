@@ -17,19 +17,18 @@ public class PlayerController : MonoBehaviour
     Vector3 MoveDirection = Vector3.zero;
     float RotationX = 0;
 
-    public static bool CanMove {private set; get;} = true;
+    public static bool CanMove {get {return !Hud.Instance.MenuOpen;}}
 
     void Start()
     {
         CharacterController = GetComponent<CharacterController>();
-
-        // Lock cursor
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
     }
 
     void Update()
     {
+        Cursor.lockState = CanMove ? CursorLockMode.Locked : CursorLockMode.None;
+        Cursor.visible = !CanMove;
+
         Movement();
         TryInteract();
     }

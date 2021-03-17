@@ -22,7 +22,9 @@ public class StandaloneInputModuleOverride: StandaloneInputModule
 	{
 		var controlType = SimpleInput.GetControlType();
 
-		if (CurrentControlType != controlType)
+		if (CurrentControlType != controlType &&
+			SimpleInput.ControlSets.Count < (int)controlType &&
+			(int)controlType >= 0)
 		{
 			var controlSet = SimpleInput.ControlSets[(int)controlType];
 

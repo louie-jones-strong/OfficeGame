@@ -7,15 +7,15 @@ public class MusicManager : MonoBehaviour
 {
 	[SerializeField] float MusicFadeTime = 1f;
 
-	const string GameMusic = "GameMusic";
-	SoundSource CurrentGameSource;
+	const string Music = "Music";
+	SoundSource CurrentMusicSource;
 
 	void Update()
 	{
-		if (CurrentGameSource == null ||
-		!CurrentGameSource.isPlaying)
+		if (CurrentMusicSource == null ||
+		!CurrentMusicSource.isPlaying)
 		{
-			CurrentGameSource = AudioManger.PlayEvent(GameMusic, fadeTime: MusicFadeTime);
+			CurrentMusicSource = AudioManger.PlayEvent(Music, fadeTime: MusicFadeTime);
 		}
 	}
 }

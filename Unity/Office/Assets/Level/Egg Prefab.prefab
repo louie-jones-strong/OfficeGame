@@ -90,7 +90,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6923865343164905469}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalRotation: {x: -0.7069834, y: 0, z: 0, w: 0.7072302}
   m_LocalPosition: {x: 12.77, y: -1.89, z: 8.18}
   m_LocalScale: {x: 19.999998, y: 19.999998, z: 22.314217}
   m_Children:
@@ -98,7 +98,7 @@ Transform:
   - {fileID: 7579637470017524530}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
 --- !u!114 &861691711283078785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,7 +111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9ed942b497b8e148879caf1ce64e815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EggMesh: {fileID: 4372609445135050728}
+  VisualEggMesh: {fileID: 4372609445135050728}
+  EggCollider: {fileID: 7360201743689603280}
 --- !u!33 &1949338196657969526
 MeshFilter:
   m_ObjectHideFlags: 0

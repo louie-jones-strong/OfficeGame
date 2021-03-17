@@ -8,7 +8,8 @@ public class Egg : MonoBehaviour
 	public static int NumberOfEggsFound {private set; get;} = 0;
 	public bool IsFound {private set; get;} = false;
 
-	[SerializeField] GameObject EggMesh;
+	[SerializeField] GameObject VisualEggMesh;
+	[SerializeField] Collider EggCollider;
 
 	void Awake()
 	{
@@ -19,7 +20,8 @@ public class Egg : MonoBehaviour
 	{
 		if (!IsFound)
 		{
-			EggMesh.SetActive(false);
+			VisualEggMesh.SetActive(false);
+			EggCollider.enabled = false;
 			NumberOfEggsFound += 1;
 			IsFound = true;
 		}

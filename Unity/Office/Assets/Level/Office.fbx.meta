@@ -32,8 +32,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Kitchen chair metal
+    second: {fileID: 2100000, guid: c164ef41ac97c884ea01a9fdc9a3e140, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Monitor Screen
     second: {fileID: 2100000, guid: 23c852f256f662d4f88bc807e742f21a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Post It Notes
+    second: {fileID: 2100000, guid: e309eb1652d06b5469e54e57c91a21b2, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -52,8 +62,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Roof Metal
+    second: {fileID: 2100000, guid: 0a6ab514b3633134baae619ae5077ace, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Wave Glass Walls
     second: {fileID: 2100000, guid: bd92be26972e46c40830bc1d672465bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chair back
+    second: {fileID: 2100000, guid: 62211c9b893d7cb44b9a2314edc05c90, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

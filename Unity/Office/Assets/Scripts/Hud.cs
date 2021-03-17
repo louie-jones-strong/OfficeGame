@@ -12,6 +12,12 @@ public class Hud : MonoBehaviour
 
 	//menu part
 	[SerializeField] Animator MenuAnimator;
+
+	[SerializeField] Slider SfxSlider;
+	[SerializeField] Slider MusicSlider;
+	[SerializeField] Slider AmbienceSlider;
+	[SerializeField] Slider SensitivitySlider;
+
 	public bool MenuOpen = true;
 	float TimeSinceSfxChange = -1f;
 	float TimeSinceAmbienceChange = -1f;
@@ -19,8 +25,18 @@ public class Hud : MonoBehaviour
 	void Awake()
 	{
 		Instance = this;
-		PlayerPrefsHelper.GetFloat("Sensitivity", 0.5f);
 		SetMenuShow(true);
+	}
+
+	void Start()
+	{
+		SfxSlider.SetValueWithoutNotify(AudioManger.SfxVolume);
+		MusicSlider.SetValueWithoutNotify(AudioManger.MusicVolume);
+		AmbienceSlider.SetValueWithoutNotify(AudioManger.AmbienceVolume);
+
+		var sensitivity = PlayerPrefsHelper.GetFloat("Sensitivity", 0.5f);
+		UiSensitivityUpdated(sensitivity);
+		SensitivitySlider.SetValueWithoutNotify(sensitivity);
 	}
 
 	void OnDestroy()
@@ -36,7 +52,7 @@ public class Hud : MonoBehaviour
 		TimerText.text = TimeUtility.GetTimeString(Time.time);
 		EggCountText.text = $"EGGS: {Egg.NumberOfEggsFound} / {Egg.TotalNumberOfEggs}";
 
-		if (SimpleInput.IsInputInState(eInput.Esc, eButtonState.Pressed))
+		if (!MenuOpen && SimpleInput.IsInputInState(eInput.Esc, eButtonState.Pressed))
 		{
 			SetMenuShow(!MenuOpen);
 		}

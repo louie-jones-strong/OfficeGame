@@ -88,7 +88,9 @@ public class PlayerController : MonoBehaviour
 
         Hud.Instance.SetShowInteractAnimator(egg != null && !egg.IsFound);
 
-        if (egg != null && SimpleInput.IsInputInState(eInput.Interact, eButtonState.Pressed))
+        if (egg != null &&
+            (Input.GetMouseButtonDown(0) ||
+            SimpleInput.IsInputInState(eInput.Interact, eButtonState.Pressed)))
         {
             egg.Found();
         }

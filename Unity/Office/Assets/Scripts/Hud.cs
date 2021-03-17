@@ -135,7 +135,7 @@ public class Hud : MonoBehaviour
 
 	public void UiSensitivityUpdated(float value)
 	{
-		PlayerController.LookSpeed = value;
+		PlayerController.LookSpeed = 0.5f + value * 3f;
 		PlayerPrefsHelper.SetFloat("Sensitivity", value);
 	}
 }

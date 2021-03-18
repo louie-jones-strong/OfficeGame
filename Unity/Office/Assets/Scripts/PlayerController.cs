@@ -19,10 +19,12 @@ public class PlayerController : MonoBehaviour
     public static bool CanMove {get {return !(Hud.Instance.MenuOpen || Hud.Instance.GameOverOpen);}}
 
     public static float CurrentPartTime {private set; get;}
+    Vector3 StartPos;
 
     void Start()
     {
         CharacterController = GetComponent<CharacterController>();
+        StartPos = transform.position;
     }
 
     void Update()
@@ -33,6 +35,13 @@ public class PlayerController : MonoBehaviour
         if (CanMove)
         {
             CurrentPartTime += Time.deltaTime;
+        }
+
+        if (transform.position.y < -10)
+        {
+            CharacterController.enabled = false;
+            transform.position = StartPos;
+            CharacterController.enabled = true;
         }
 
         Movement();

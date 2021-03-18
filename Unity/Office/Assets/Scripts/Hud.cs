@@ -4,12 +4,13 @@ using UnityEngine.UI;
 public class Hud : MonoBehaviour
 {
 	public static Hud Instance {private set; get;}
+	[Header("Hud")]
 	[SerializeField] Text TimerText;
 	[SerializeField] Text EggCountText;
 
 	[SerializeField] Animator InteractAnimator;
 
-
+	[Header("Main Menu")]
 	//menu part
 	[SerializeField] Animator MenuAnimator;
 
@@ -18,7 +19,11 @@ public class Hud : MonoBehaviour
 	[SerializeField] Slider AmbienceSlider;
 	[SerializeField] Slider SensitivitySlider;
 
+	[Header("Game Over")]
+	[SerializeField] Animator GameOverAnimator;
+
 	public bool MenuOpen = true;
+	public bool GameOverOpen = false;
 	float TimeSinceSfxChange = -1f;
 	float TimeSinceAmbienceChange = -1f;
 
@@ -26,6 +31,7 @@ public class Hud : MonoBehaviour
 	{
 		Instance = this;
 		SetMenuShow(true);
+		SetGameOverShow(false);
 	}
 
 	void Start()
@@ -37,6 +43,7 @@ public class Hud : MonoBehaviour
 		var sensitivity = PlayerPrefsHelper.GetFloat("Sensitivity", 0.5f);
 		UiSensitivityUpdated(sensitivity);
 		SensitivitySlider.SetValueWithoutNotify(sensitivity);
+
 	}
 
 	void OnDestroy()
@@ -49,10 +56,21 @@ public class Hud : MonoBehaviour
 
 	void Update()
 	{
-		TimerText.text = TimeUtility.GetTimeString(Time.time);
+		TimerText.text = TimeUtility.GetTimeString(PlayerController.CurrentPartTime);
 		EggCountText.text = $"EGGS: {Egg.NumberOfEggsFound} / {Egg.TotalNumberOfEggs}";
 
-		if (!MenuOpen && SimpleInput.IsInputInState(eInput.Esc, eButtonState.Pressed))
+		if (!GameOverOpen && Egg.NumberOfEggsFound >= Egg.TotalNumberOfEggs)
+		{
+			var bestPart1Time = PlayerPrefsHelper.GetFloat(Settings.Part1BestTimePrefKey, -1f);
+			if (bestPart1Time < 0f || PlayerController.CurrentPartTime <= bestPart1Time)
+			{
+				PlayerPrefsHelper.SetFloat(Settings.Part1BestTimePrefKey, PlayerController.CurrentPartTime);
+			}
+
+			SetGameOverShow(true);
+		}
+
+		if (!GameOverOpen && !MenuOpen && SimpleInput.IsInputInState(eInput.Esc, eButtonState.Pressed))
 		{
 			SetMenuShow(!MenuOpen);
 		}
@@ -100,6 +118,12 @@ public class Hud : MonoBehaviour
 		MenuAnimator.SetBool("Show", show);
 	}
 
+	void SetGameOverShow(bool show)
+	{
+		GameOverOpen = show;
+		GameOverAnimator.SetBool("Show", show);
+	}
+
 	public void UiQuit()
 	{
 		MainManager.CloseGame();
@@ -107,12 +131,17 @@ public class Hud : MonoBehaviour
 
 	public void UiClearData()
 	{
+		var sensitivity = PlayerPrefsHelper.GetFloat("Sensitivity");
+
 		PlayerPrefsHelper.DeleteAll();
 
 		//reset the volume values in the prefabs
 		AudioManger.SfxVolume = AudioManger.SfxVolume;
 		AudioManger.AmbienceVolume = AudioManger.AmbienceVolume;
 		AudioManger.MusicVolume = AudioManger.MusicVolume;
+
+		UiSensitivityUpdated(sensitivity);
+
 		MainManager.DoKickBack();
 	}
 

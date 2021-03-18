@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
-
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] float WalkingSpeed = 7.5f;
@@ -17,17 +16,33 @@ public class PlayerController : MonoBehaviour
     Vector3 MoveDirection = Vector3.zero;
     float RotationX = 0;
 
-    public static bool CanMove {get {return !Hud.Instance.MenuOpen;}}
+    public static bool CanMove {get {return !(Hud.Instance.MenuOpen || Hud.Instance.GameOverOpen);}}
+
+    public static float CurrentPartTime {private set; get;}
+
+    static string CurrentPartTimeKey = "CurrentPartTimeKey";
 
     void Start()
     {
         CharacterController = GetComponent<CharacterController>();
+        CurrentPartTime = PlayerPrefsHelper.GetFloat(CurrentPartTimeKey);
+    }
+
+    public static void SetCurrentPartTime()
+    {
+        PlayerPrefsHelper.SetFloat(CurrentPartTimeKey, CurrentPartTime);
     }
 
     void Update()
     {
         Cursor.lockState = CanMove ? CursorLockMode.Locked : CursorLockMode.None;
         Cursor.visible = !CanMove;
+
+        if (CanMove)
+        {
+            CurrentPartTime += Time.deltaTime;
+            PlayerPrefsHelper.SetFloat(CurrentPartTimeKey, CurrentPartTime);
+        }
 
         Movement();
         TryInteract();

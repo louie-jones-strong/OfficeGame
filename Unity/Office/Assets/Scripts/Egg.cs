@@ -7,8 +7,6 @@ public class Egg : MonoBehaviour
 	public static int TotalNumberOfEggs {private set; get;} = 0;
 	public static int NumberOfEggsFound {private set; get;} = 0;
 	public bool IsFound {private set; get;} = false;
-	[SerializeField] int Index;
-	string FoundPrefKey {get {return $"EggFound{Index}";}}
 
 	[SerializeField] GameObject VisualEggMesh;
 	[SerializeField] Collider EggCollider;
@@ -16,11 +14,6 @@ public class Egg : MonoBehaviour
 	void Awake()
 	{
 		TotalNumberOfEggs += 1;
-
-		if (PlayerPrefsHelper.GetBool(FoundPrefKey))
-		{
-			Found();
-		}
 	}
 
 	public void Found()
@@ -32,7 +25,14 @@ public class Egg : MonoBehaviour
 			NumberOfEggsFound += 1;
 			IsFound = true;
 
-			PlayerPrefsHelper.SetBool(FoundPrefKey, IsFound);
+			if (Egg.NumberOfEggsFound >= Egg.TotalNumberOfEggs)
+			{
+				var bestPart1Time = PlayerPrefsHelper.GetFloat(Settings.Part1BestTimePrefKey, -1f);
+				if (bestPart1Time < 0f || PlayerController.CurrentPartTime <= bestPart1Time)
+				{
+					PlayerPrefsHelper.SetFloat(Settings.Part1BestTimePrefKey, PlayerController.CurrentPartTime);
+				}
+			}
 		}
 	}
 

@@ -6,6 +6,7 @@ public class Hud : MonoBehaviour
 	public static Hud Instance {private set; get;}
 	[Header("Hud")]
 	[SerializeField] Text TimerText;
+	[SerializeField] Text PartText;
 	[SerializeField] Text EggCountText;
 
 	[SerializeField] Animator InteractAnimator;
@@ -21,6 +22,7 @@ public class Hud : MonoBehaviour
 
 	[Header("Game Over")]
 	[SerializeField] Animator GameOverAnimator;
+	[SerializeField] Text BodyText;
 
 	public bool MenuOpen = true;
 	public bool GameOverOpen = false;
@@ -57,16 +59,11 @@ public class Hud : MonoBehaviour
 	void Update()
 	{
 		TimerText.text = TimeUtility.GetTimeString(PlayerController.CurrentPartTime);
+		PartText.text = "Find All the Eggs";
 		EggCountText.text = $"EGGS: {Egg.NumberOfEggsFound} / {Egg.TotalNumberOfEggs}";
 
 		if (!GameOverOpen && Egg.NumberOfEggsFound >= Egg.TotalNumberOfEggs)
 		{
-			var bestPart1Time = PlayerPrefsHelper.GetFloat(Settings.Part1BestTimePrefKey, -1f);
-			if (bestPart1Time < 0f || PlayerController.CurrentPartTime <= bestPart1Time)
-			{
-				PlayerPrefsHelper.SetFloat(Settings.Part1BestTimePrefKey, PlayerController.CurrentPartTime);
-			}
-
 			SetGameOverShow(true);
 		}
 
@@ -122,11 +119,18 @@ public class Hud : MonoBehaviour
 	{
 		GameOverOpen = show;
 		GameOverAnimator.SetBool("Show", show);
+
+		BodyText.text = "Wow looks like your an eggspert at this. Would you like some more eggs-ercise?";
 	}
 
 	public void UiQuit()
 	{
 		MainManager.CloseGame();
+	}
+
+	public void UiPlayAgain()
+	{
+		MainManager.DoKickBack();
 	}
 
 	public void UiClearData()

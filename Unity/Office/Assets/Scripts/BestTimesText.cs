@@ -8,6 +8,9 @@ public class BestTimesText : MonoBehaviour
 	[SerializeField] Text Part1BestTimeText;
 	[SerializeField] Text Part2BestTimeText;
 
+	public GameObject Part1NewBest;
+	public GameObject Part2NewBest;
+
 	void OnEnable()
 	{
 		float part1Time = PlayerPrefsHelper.GetFloat(Settings.Part1BestTimePrefKey, -1f);

@@ -20,17 +20,9 @@ public class PlayerController : MonoBehaviour
 
     public static float CurrentPartTime {private set; get;}
 
-    static string CurrentPartTimeKey = "CurrentPartTimeKey";
-
     void Start()
     {
         CharacterController = GetComponent<CharacterController>();
-        CurrentPartTime = PlayerPrefsHelper.GetFloat(CurrentPartTimeKey);
-    }
-
-    public static void SetCurrentPartTime()
-    {
-        PlayerPrefsHelper.SetFloat(CurrentPartTimeKey, CurrentPartTime);
     }
 
     void Update()
@@ -41,7 +33,6 @@ public class PlayerController : MonoBehaviour
         if (CanMove)
         {
             CurrentPartTime += Time.deltaTime;
-            PlayerPrefsHelper.SetFloat(CurrentPartTimeKey, CurrentPartTime);
         }
 
         Movement();

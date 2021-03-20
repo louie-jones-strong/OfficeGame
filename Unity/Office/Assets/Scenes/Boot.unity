@@ -337,10 +337,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 494743971}
     m_Modifications:
-    - target: {fileID: 5912602791092922577, guid: a57459da55d4cd443ae447b6017814a8, type: 3}
-      propertyPath: m_RaycastTarget
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5912602791829943424, guid: a57459da55d4cd443ae447b6017814a8, type: 3}
       propertyPath: m_Name
       value: Transition

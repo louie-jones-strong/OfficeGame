@@ -4,44 +4,51 @@ using UnityEngine;
 
 public class Egg : MonoBehaviour
 {
-	public static int TotalNumberOfEggs {private set; get;} = 0;
-	public static int NumberOfEggsFound {private set; get;} = 0;
-	public bool IsFound {private set; get;} = false;
+	public bool IsFound;
 
-	[SerializeField] GameObject VisualEggMesh;
-	[SerializeField] Collider EggCollider;
-
-	void Awake()
-	{
-		TotalNumberOfEggs += 1;
-	}
+	public GameObject VisualEggMesh;
+	public Collider EggCollider;
 
 	public void Found()
 	{
-		if (!IsFound)
+		if (EggManger.Instance.FindingMode && !IsFound)
 		{
-			VisualEggMesh.SetActive(false);
 			EggCollider.enabled = false;
-			NumberOfEggsFound += 1;
+			SetShow(false);
 			IsFound = true;
 
-			if (Egg.NumberOfEggsFound >= Egg.TotalNumberOfEggs)
+			if (EggManger.NumberOfEggsFound >= EggManger.TotalNumberOfEggs)
 			{
 				var bestPart1Time = PlayerPrefsHelper.GetFloat(Settings.Part1BestTimePrefKey, -1f);
 				if (bestPart1Time < 0f || PlayerController.CurrentPartTime <= bestPart1Time)
 				{
 					PlayerPrefsHelper.SetFloat(Settings.Part1BestTimePrefKey, PlayerController.CurrentPartTime);
 				}
+				EggManger.SetMode(false);
+				Hud.Instance.SetGameOverShow(true);
+			}
+		}
+		else if (!EggManger.Instance.FindingMode && IsFound)
+		{
+			EggCollider.enabled = false;
+			SetShow(true);
+			IsFound = false;
+
+			if (EggManger.NumberOfEggsFound <= 0)
+			{
+				var bestPart2Time = PlayerPrefsHelper.GetFloat(Settings.Part2BestTimePrefKey, -1f);
+				if (bestPart2Time < 0f || PlayerController.CurrentPartTime <= bestPart2Time)
+				{
+					PlayerPrefsHelper.SetFloat(Settings.Part2BestTimePrefKey, PlayerController.CurrentPartTime);
+				}
+				EggManger.SetMode(true);
+				Hud.Instance.SetGameOverShow(true);
 			}
 		}
 	}
 
-	void OnDestroy()
+	public void SetShow(bool show)
 	{
-		TotalNumberOfEggs -= 1;
-		if (IsFound)
-		{
-			NumberOfEggsFound -= 1;
-		}
+		VisualEggMesh.SetActive(show);
 	}
 }

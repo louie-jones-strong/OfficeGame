@@ -101,7 +101,8 @@ public class PlayerController : MonoBehaviour
             egg = hitInfo.collider.GetComponent<Egg>();
         }
 
-        Hud.Instance.SetShowInteractAnimator(egg != null && !egg.IsFound);
+        bool showHud = egg != null && (EggManger.Instance.FindingMode ? !egg.IsFound : egg.IsFound);
+        Hud.Instance.SetShowInteractAnimator(showHud);
 
         if (egg != null &&
             (Input.GetMouseButtonDown(0) ||

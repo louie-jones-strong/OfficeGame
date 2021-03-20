@@ -455,6 +455,7 @@ GameObject:
   - component: {fileID: 1596719860}
   - component: {fileID: 1596719863}
   - component: {fileID: 1596719862}
+  - component: {fileID: 1596719864}
   m_Layer: 0
   m_Name: Manger
   m_TagString: Untagged
@@ -549,6 +550,19 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
+--- !u!114 &1596719864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596719857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf65718906fbfcd4282e688483526528, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OutputTexture: {fileID: 8600000, guid: dc7526552f44a69499276d315dc0af7b, type: 2}
 --- !u!1 &2037648042
 GameObject:
   m_ObjectHideFlags: 0

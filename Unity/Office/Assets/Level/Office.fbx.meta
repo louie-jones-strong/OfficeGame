@@ -52,6 +52,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Glass walls.008
+    second: {fileID: 2100000, guid: bd92be26972e46c40830bc1d672465bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Glass walls.010
     second: {fileID: 2100000, guid: bd92be26972e46c40830bc1d672465bb, type: 2}
   - first:

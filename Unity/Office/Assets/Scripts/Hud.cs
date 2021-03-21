@@ -20,6 +20,11 @@ public class Hud : MonoBehaviour
 	[SerializeField] Slider AmbienceSlider;
 	[SerializeField] Slider SensitivitySlider;
 
+	[SerializeField] Button RestartButton;
+	[SerializeField] Button PlayPart1Button;
+	[SerializeField] Button PlayPart2Button;
+
+
 	[Header("Game Over")]
 	[SerializeField] Animator GameOverAnimator;
 	[SerializeField] Text BodyText;
@@ -66,6 +71,13 @@ public class Hud : MonoBehaviour
 		{
 			SetMenuShow(!MenuOpen);
 		}
+
+		float part1Time = PlayerPrefsHelper.GetFloat(Settings.Part1BestTimePrefKey, -1f);
+		bool hasFinishedPart1 = part1Time >= 0f;
+
+		RestartButton.gameObject.SetActive(!hasFinishedPart1);
+		PlayPart1Button.gameObject.SetActive(hasFinishedPart1);
+		PlayPart2Button.gameObject.SetActive(hasFinishedPart1);
 
 		if (TimeSinceSfxChange >= 0)
 		{
@@ -123,14 +135,15 @@ public class Hud : MonoBehaviour
 		MainManager.CloseGame();
 	}
 
-	public void UiPlayAgain()
+	public void UiPlayPart1()
 	{
 		EggManger.SetMode(true);
 		MainManager.DoKickBack();
 	}
 
-	public void UiPlayNext()
+	public void UiPlayPart2()
 	{
+		EggManger.SetMode(false);
 		MainManager.DoKickBack();
 	}
 

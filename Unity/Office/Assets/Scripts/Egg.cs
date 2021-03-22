@@ -8,6 +8,7 @@ public class Egg : MonoBehaviour
 
 	public GameObject VisualEggMesh;
 	public Collider EggCollider;
+	[SerializeField] ParticleSystem Particles;
 
 	public void Found()
 	{
@@ -27,6 +28,7 @@ public class Egg : MonoBehaviour
 				EggManger.SetMode(false);
 				Hud.Instance.SetGameOverShow(true);
 			}
+			Particles.Play();
 		}
 		else if (!EggManger.Instance.FindingMode && IsFound)
 		{
@@ -44,6 +46,7 @@ public class Egg : MonoBehaviour
 				EggManger.SetMode(true);
 				Hud.Instance.SetGameOverShow(true);
 			}
+			Particles.Play();
 		}
 	}
 

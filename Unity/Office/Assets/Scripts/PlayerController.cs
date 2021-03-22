@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] List<Camera> PlayerCameras;
     public static float LookSpeed = 2.0f;
     [SerializeField] float LookXLimit = 70.0f;
+    [SerializeField] ParticleSystem WalkParticles;
 
     CharacterController CharacterController;
     Vector3 MoveDirection = Vector3.zero;
@@ -44,11 +45,13 @@ public class PlayerController : MonoBehaviour
             CharacterController.enabled = true;
         }
 
-        Movement();
+        var isWalking = Movement();
+        WalkParticles.emissionRate = isWalking ? 20 : 0;
+
         TryInteract();
     }
 
-    void Movement()
+    bool Movement()
     {
         // We are grounded, so recalculate move direction based on axes
         Vector3 forward = transform.TransformDirection(Vector3.forward);
@@ -90,6 +93,8 @@ public class PlayerController : MonoBehaviour
             }
             transform.rotation *= Quaternion.Euler(0, SimpleInput.GetInputValue(eInput.XLookAxis) * LookSpeed, 0);
         }
+
+        return (new Vector2(MoveDirection.x, MoveDirection.z)).magnitude >= 0.1f;
     }
 
     void TryInteract()

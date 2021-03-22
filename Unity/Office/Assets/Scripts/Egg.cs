@@ -17,6 +17,7 @@ public class Egg : MonoBehaviour
 			EggCollider.enabled = false;
 			SetShow(false);
 			IsFound = true;
+			AudioManger.PlayEvent("Collect", transform);
 
 			if (EggManger.NumberOfEggsFound >= EggManger.TotalNumberOfEggs)
 			{

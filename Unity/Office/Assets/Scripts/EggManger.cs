@@ -25,6 +25,10 @@ public class EggManger : MonoBehaviour
 	public static void SetMode(bool findMode)
 	{
 		findMode = true;
+		if (Instance.FindingMode == findMode)
+		{
+			return;
+		}
 		Instance.FindingMode = findMode;
 
 		foreach (var egg in Instance.EggList)

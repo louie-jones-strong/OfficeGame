@@ -117,12 +117,20 @@ public class Hud : MonoBehaviour
 
 	void SetMenuShow(bool show)
 	{
+		if (MenuOpen != show)
+		{
+			AudioManger.PlayEvent(show ? "Popup Open" : "Popup Close");
+		}
 		MenuOpen = show;
 		MenuAnimator.SetBool("Show", show);
 	}
 
 	public void SetGameOverShow(bool show)
 	{
+		if (GameOverOpen != show)
+		{
+			AudioManger.PlayEvent(show ? "Popup Open" : "Popup Close");
+		}
 		GameOverOpen = show;
 		GameOverAnimator.SetBool("Show", show);
 

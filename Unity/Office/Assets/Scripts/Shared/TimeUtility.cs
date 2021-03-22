@@ -15,11 +15,7 @@ public class TimeUtility
 		var mins = (totalSecondsInt / 60) % 60;
 
 		var text = string.Empty;
-		if (mins >= 10)
-		{
-			text += $"{mins}{MinutesSuffix}";
-		}
-		else if (mins > 0)
+		if (mins > 0)
 		{
 			text = $"{mins}{MinutesSuffix} {secs}{SecondsSuffix}";
 		}

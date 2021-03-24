@@ -11,7 +11,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] List<Camera> PlayerCameras;
     public static float LookSpeed = 2.0f;
     [SerializeField] float LookXLimit = 70.0f;
-    [SerializeField] ParticleSystem WalkParticles;
 
     CharacterController CharacterController;
     Vector3 MoveDirection = Vector3.zero;
@@ -47,7 +46,6 @@ public class PlayerController : MonoBehaviour
         }
 
         var isWalking = Movement();
-        WalkParticles.emissionRate = isWalking ? 20 : 0;
 
         TryInteract();
     }

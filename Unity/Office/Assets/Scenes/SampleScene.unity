@@ -320,7 +320,6 @@ MonoBehaviour:
   PlayerCameras:
   - {fileID: 1687258584}
   LookXLimit: 90
-  WalkParticles: {fileID: 0}
 --- !u!143 &62453153
 CharacterController:
   m_ObjectHideFlags: 0
@@ -346,9 +345,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2117875541}
     m_Modifications:
+    - target: {fileID: 234244783289833234, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_Name
       value: Chair (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5795846431390070371, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_RootOrder
@@ -408,9 +415,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 234244783289833234, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_Name
       value: Chair (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5795846431390070371, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_RootOrder
@@ -856,6 +871,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2117875541}
     m_Modifications:
+    - target: {fileID: 737092750105844969, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1313739948330720401, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -916,6 +935,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: KeyBoard (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527836350467668111, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231681468691389078, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
 --- !u!4 &181312583 stripped
@@ -930,9 +961,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 234244783289833234, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_Name
       value: Chair (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5795846431390070371, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_RootOrder
@@ -992,6 +1031,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 737092750105844969, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1313739948330720401, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_RootOrder
       value: 35
@@ -1052,6 +1095,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: KeyBoard (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527836350467668111, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231681468691389078, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
 --- !u!4 &185126640 stripped
@@ -1096,6 +1151,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2117875541}
     m_Modifications:
+    - target: {fileID: 737092750105844969, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1313739948330720401, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -1156,6 +1215,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: KeyBoard (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527836350467668111, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231681468691389078, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
 --- !u!4 &194644869 stripped
@@ -1170,6 +1241,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2117875541}
     m_Modifications:
+    - target: {fileID: 737092750105844969, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1313739948330720401, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -1229,6 +1304,18 @@ PrefabInstance:
     - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_Name
       value: KeyBoard (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527836350467668111, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231681468691389078, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
@@ -1475,6 +1562,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2117875541}
     m_Modifications:
+    - target: {fileID: 737092750105844969, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1313739948330720401, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_RootOrder
       value: 24
@@ -1535,6 +1626,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: KeyBoard (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527836350467668111, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231681468691389078, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
 --- !u!4 &264137858 stripped
@@ -1567,9 +1670,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2117875541}
     m_Modifications:
+    - target: {fileID: 234244783289833234, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_Name
       value: Chair (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5795846431390070371, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_RootOrder
@@ -1647,6 +1758,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 737092750105844969, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1313739948330720401, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -1706,6 +1821,18 @@ PrefabInstance:
     - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_Name
       value: KeyBoard (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527836350467668111, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231681468691389078, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
@@ -1849,6 +1976,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 737092750105844969, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1313739948330720401, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_RootOrder
       value: 29
@@ -1909,6 +2040,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: KeyBoard (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527836350467668111, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231681468691389078, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
 --- !u!4 &304711353 stripped
@@ -1941,9 +2084,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2117875541}
     m_Modifications:
+    - target: {fileID: 234244783289833234, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_Name
       value: Chair (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5795846431390070371, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_RootOrder
@@ -2028,7 +2179,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &368317425
 Transform:
@@ -2054,9 +2205,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2117875541}
     m_Modifications:
+    - target: {fileID: 234244783289833234, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_Name
       value: Chair (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5795846431390070371, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_RootOrder
@@ -2361,6 +2520,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 737092750105844969, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1313739948330720401, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_RootOrder
       value: 28
@@ -2421,6 +2584,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: KeyBoard (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527836350467668111, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231681468691389078, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
 --- !u!4 &502707576 stripped
@@ -2435,6 +2610,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 737092750105844969, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1313739948330720401, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -2495,6 +2674,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: KeyBoard (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527836350467668111, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231681468691389078, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
 --- !u!4 &504786000 stripped
@@ -2527,9 +2718,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2117875541}
     m_Modifications:
+    - target: {fileID: 234244783289833234, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_Name
       value: Chair (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5795846431390070371, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_RootOrder
@@ -2589,9 +2788,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2117875541}
     m_Modifications:
+    - target: {fileID: 234244783289833234, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_Name
       value: Chair (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5795846431390070371, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_RootOrder
@@ -2651,9 +2858,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 234244783289833234, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_Name
       value: Chair (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5795846431390070371, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_RootOrder
@@ -2731,6 +2946,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 737092750105844969, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1313739948330720401, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -2790,6 +3009,18 @@ PrefabInstance:
     - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_Name
       value: KeyBoard (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527836350467668111, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231681468691389078, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
@@ -2889,9 +3120,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 234244783289833234, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_Name
       value: Chair (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5795846431390070371, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_RootOrder
@@ -2988,9 +3227,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 234244783289833234, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_Name
       value: Chair (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5795846431390070371, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_RootOrder
@@ -3172,6 +3419,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 737092750105844969, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1313739948330720401, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -3232,6 +3483,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: KeyBoard (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527836350467668111, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231681468691389078, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
 --- !u!4 &661977058 stripped
@@ -3265,9 +3528,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 234244783289833234, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_Name
       value: Chair
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5795846431390070371, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_RootOrder
@@ -3435,6 +3706,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 737092750105844969, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1313739948330720401, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -3494,6 +3769,18 @@ PrefabInstance:
     - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_Name
       value: KeyBoard (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527836350467668111, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231681468691389078, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
@@ -3598,6 +3885,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2117875541}
     m_Modifications:
+    - target: {fileID: 737092750105844969, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1313739948330720401, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_RootOrder
       value: 28
@@ -3658,6 +3949,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: KeyBoard (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527836350467668111, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231681468691389078, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
 --- !u!4 &714947152 stripped
@@ -3672,6 +3975,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 737092750105844969, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1313739948330720401, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_RootOrder
       value: 31
@@ -3732,6 +4039,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: KeyBoard (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527836350467668111, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231681468691389078, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
 --- !u!4 &726470717 stripped
@@ -3775,6 +4094,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 737092750105844969, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1313739948330720401, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_RootOrder
       value: 26
@@ -3834,6 +4157,18 @@ PrefabInstance:
     - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_Name
       value: KeyBoard (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527836350467668111, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231681468691389078, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
@@ -3926,6 +4261,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2117875541}
     m_Modifications:
+    - target: {fileID: 737092750105844969, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1313739948330720401, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -3985,6 +4324,18 @@ PrefabInstance:
     - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_Name
       value: KeyBoard (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527836350467668111, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231681468691389078, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
@@ -19950,6 +20301,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 737092750105844969, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1313739948330720401, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_RootOrder
       value: 33
@@ -20009,6 +20364,18 @@ PrefabInstance:
     - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_Name
       value: KeyBoard (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527836350467668111, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231681468691389078, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
@@ -20197,6 +20564,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 737092750105844969, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1313739948330720401, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -20256,6 +20627,18 @@ PrefabInstance:
     - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_Name
       value: KeyBoard (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527836350467668111, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231681468691389078, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
@@ -20432,6 +20815,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2117875541}
     m_Modifications:
+    - target: {fileID: 737092750105844969, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1313739948330720401, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -20491,6 +20878,18 @@ PrefabInstance:
     - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_Name
       value: KeyBoard (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527836350467668111, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231681468691389078, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
@@ -20674,6 +21073,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2117875541}
     m_Modifications:
+    - target: {fileID: 737092750105844969, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1313739948330720401, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -20733,6 +21136,18 @@ PrefabInstance:
     - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_Name
       value: KeyBoard (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527836350467668111, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231681468691389078, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
@@ -20886,9 +21301,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 234244783289833234, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_Name
       value: Chair (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5795846431390070371, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_RootOrder
@@ -20967,9 +21390,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 234244783289833234, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_Name
       value: Chair (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5795846431390070371, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_RootOrder
@@ -21111,9 +21542,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 234244783289833234, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_Name
       value: Chair (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5795846431390070371, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_RootOrder
@@ -21220,6 +21659,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2117875541}
     m_Modifications:
+    - target: {fileID: 737092750105844969, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1313739948330720401, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -21280,6 +21723,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: KeyBoard (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527836350467668111, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231681468691389078, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
 --- !u!4 &1208437910 stripped
@@ -21330,6 +21785,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2117875541}
     m_Modifications:
+    - target: {fileID: 737092750105844969, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1313739948330720401, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_RootOrder
       value: 26
@@ -21390,6 +21849,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: KeyBoard (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527836350467668111, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231681468691389078, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
 --- !u!4 &1240586748 stripped
@@ -21440,6 +21911,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2117875541}
     m_Modifications:
+    - target: {fileID: 737092750105844969, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1313739948330720401, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -21499,6 +21974,18 @@ PrefabInstance:
     - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_Name
       value: KeyBoard (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527836350467668111, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231681468691389078, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
@@ -21623,6 +22110,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 737092750105844969, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1313739948330720401, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -21682,6 +22173,18 @@ PrefabInstance:
     - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_Name
       value: KeyBoard (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527836350467668111, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231681468691389078, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
@@ -21801,9 +22304,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2117875541}
     m_Modifications:
+    - target: {fileID: 234244783289833234, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_Name
       value: Chair (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5795846431390070371, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_RootOrder
@@ -21947,9 +22458,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2117875541}
     m_Modifications:
+    - target: {fileID: 234244783289833234, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_Name
       value: Chair (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5795846431390070371, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_RootOrder
@@ -22045,9 +22564,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 234244783289833234, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_Name
       value: Chair (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5795846431390070371, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_RootOrder
@@ -22229,9 +22756,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2117875541}
     m_Modifications:
+    - target: {fileID: 234244783289833234, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_Name
       value: Chair (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5795846431390070371, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_RootOrder
@@ -22291,9 +22826,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2117875541}
     m_Modifications:
+    - target: {fileID: 234244783289833234, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_Name
       value: Chair (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5795846431390070371, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_RootOrder
@@ -22372,6 +22915,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 737092750105844969, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1313739948330720401, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_RootOrder
       value: 34
@@ -22432,6 +22979,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: KeyBoard (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527836350467668111, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231681468691389078, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
 --- !u!4 &1565958523 stripped
@@ -22476,9 +23035,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2117875541}
     m_Modifications:
+    - target: {fileID: 234244783289833234, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_Name
       value: Chair (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5795846431390070371, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_RootOrder
@@ -22556,9 +23123,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 234244783289833234, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_Name
       value: Chair (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5795846431390070371, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_RootOrder
@@ -22618,9 +23193,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 234244783289833234, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_Name
       value: Chair (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5795846431390070371, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_RootOrder
@@ -22680,6 +23263,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 737092750105844969, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1313739948330720401, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -22740,6 +23327,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: KeyBoard (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527836350467668111, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231681468691389078, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
 --- !u!4 &1627380896 stripped
@@ -22754,6 +23353,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2117875541}
     m_Modifications:
+    - target: {fileID: 737092750105844969, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1313739948330720401, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -22814,6 +23417,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: KeyBoard
       objectReference: {fileID: 0}
+    - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527836350467668111, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231681468691389078, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
 --- !u!4 &1632509061 stripped
@@ -22846,6 +23461,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 737092750105844969, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1313739948330720401, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_RootOrder
       value: 24
@@ -22905,6 +23524,18 @@ PrefabInstance:
     - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_Name
       value: KeyBoard (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527836350467668111, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231681468691389078, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
@@ -23136,9 +23767,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 234244783289833234, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_Name
       value: Chair (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5795846431390070371, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_RootOrder
@@ -23282,9 +23921,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2117875541}
     m_Modifications:
+    - target: {fileID: 234244783289833234, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_Name
       value: Chair (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5795846431390070371, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_RootOrder
@@ -23344,9 +23991,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 234244783289833234, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_Name
       value: Chair (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5795846431390070371, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_RootOrder
@@ -23436,6 +24091,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 737092750105844969, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1313739948330720401, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -23496,6 +24155,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: KeyBoard (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527836350467668111, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231681468691389078, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
 --- !u!4 &1791037393 stripped
@@ -23510,9 +24181,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 234244783289833234, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_Name
       value: Chair (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5795846431390070371, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_RootOrder
@@ -23697,6 +24376,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 737092750105844969, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1313739948330720401, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -23757,6 +24440,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: KeyBoard (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527836350467668111, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231681468691389078, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
 --- !u!4 &1880824552 stripped
@@ -23807,6 +24502,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2117875541}
     m_Modifications:
+    - target: {fileID: 737092750105844969, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1313739948330720401, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -23866,6 +24565,18 @@ PrefabInstance:
     - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_Name
       value: KeyBoard (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527836350467668111, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231681468691389078, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
@@ -23991,9 +24702,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 234244783289833234, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_Name
       value: Chair (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5795846431390070371, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_RootOrder
@@ -24173,9 +24892,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 234244783289833234, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_Name
       value: Chair (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5795846431390070371, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_RootOrder
@@ -24253,6 +24980,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2117875541}
     m_Modifications:
+    - target: {fileID: 737092750105844969, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1313739948330720401, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_RootOrder
       value: 29
@@ -24313,6 +25044,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: KeyBoard (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527836350467668111, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231681468691389078, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
 --- !u!4 &1999800357 stripped
@@ -24327,9 +25070,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2117875541}
     m_Modifications:
+    - target: {fileID: 234244783289833234, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_Name
       value: Chair (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5795846431390070371, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_RootOrder
@@ -24502,9 +25253,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2117875541}
     m_Modifications:
+    - target: {fileID: 234244783289833234, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_Name
       value: Chair (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5795846431390070371, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_RootOrder
@@ -24571,7 +25330,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2050357128
 Transform:
@@ -24681,9 +25440,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2050357128}
     m_Modifications:
+    - target: {fileID: 234244783289833234, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_Name
       value: Chair (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5795846431390070371, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_RootOrder
@@ -24788,7 +25555,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2117875541
 Transform:
@@ -24881,6 +25648,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2117875541}
     m_Modifications:
+    - target: {fileID: 737092750105844969, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1313739948330720401, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -24940,6 +25711,18 @@ PrefabInstance:
     - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
       propertyPath: m_Name
       value: KeyBoard (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833113660009891371, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527836350467668111, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231681468691389078, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7958d5bb7cce2644aed72db42354595, type: 3}
@@ -25012,9 +25795,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2117875541}
     m_Modifications:
+    - target: {fileID: 234244783289833234, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_Name
       value: Chair
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116369460425347152, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5795846431390070371, guid: 858c23fea2f8e9640ab76864ab3b0026, type: 3}
       propertyPath: m_RootOrder

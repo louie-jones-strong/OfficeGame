@@ -3,7 +3,17 @@ guid: 962e88bf62617cd46aa58008e14c27ba
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Key caps
+    second: {fileID: 2100000, guid: 0ba47a255e9bc4944acb65e1792d6a44, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: KeyBaord Base
+    second: {fileID: 2100000, guid: 0a6ab514b3633134baae619ae5077ace, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

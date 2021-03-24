@@ -5427,6 +5427,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1414618575}
     m_Modifications:
+    - target: {fileID: 4055812247917531205, guid: a3ec6ced863fbd649aa3df2ee73e3357, type: 3}
+      propertyPath: m_Alpha
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 8086853489638321961, guid: a3ec6ced863fbd649aa3df2ee73e3357, type: 3}
       propertyPath: m_Name
       value: ButtonReminder

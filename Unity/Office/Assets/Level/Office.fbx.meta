@@ -12,13 +12,53 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Alpha
+    second: {fileID: 2100000, guid: c05fcc1ea5646074db21a3f0b52b22cc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black Metal
+    second: {fileID: 2100000, guid: 21a04c93d72c5014287528b0fa4177d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black Metal.001
+    second: {fileID: 2100000, guid: 21a04c93d72c5014287528b0fa4177d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Black Plastic
     second: {fileID: 2100000, guid: 6063169641e068043a897e1fc4593fad, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Blinds
+    second: {fileID: 2100000, guid: b42a7bd4d006aa9469f7eb5de8ee18ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dark Walls.001
+    second: {fileID: 2100000, guid: 386be3c02c895e0459500b371dfc515c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Door White
+    second: {fileID: 2100000, guid: 68395b9115ffd8849aa2695305640b52, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floor
+    second: {fileID: 2100000, guid: c538cb7d169ed724dbdf6f63ed5600f8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Frost Glass
     second: {fileID: 2100000, guid: 946de8399583b8a4b93c64a2af1b5b6c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gap Between Glass
+    second: {fileID: 2100000, guid: 3aa5b35c4c5c62b44b522844b79eabdf, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -78,7 +118,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Kitchen chair metal
-    second: {fileID: 2100000, guid: c164ef41ac97c884ea01a9fdc9a3e140, type: 2}
+    second: {fileID: 2100000, guid: 0a6ab514b3633134baae619ae5077ace, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Logo Wall
+    second: {fileID: 2100000, guid: 0c835ffe9a751c84bb7411cb573bdeb6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -102,6 +147,16 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Pillar
+    second: {fileID: 2100000, guid: 9d7c1f803cea61f4a978ab84b878f909, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pillar.001
+    second: {fileID: 2100000, guid: 9d7c1f803cea61f4a978ab84b878f909, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Post It Notes
     second: {fileID: 2100000, guid: e309eb1652d06b5469e54e57c91a21b2, type: 2}
   - first:
@@ -117,6 +172,16 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Red Wall
+    second: {fileID: 2100000, guid: 02ac1359f96db5e4ea170e753933ae6d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roof Light
+    second: {fileID: 2100000, guid: 8eda6907b64cada43bc12a2e22428239, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Roof Light On
     second: {fileID: 2100000, guid: c769b99178454be4a8e5bd53b1fff3e0, type: 2}
   - first:
@@ -127,13 +192,108 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Roof Panel
+    second: {fileID: 2100000, guid: 5c072823603bb6d46b1c199915d04553, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Table Hole Cover
+    second: {fileID: 2100000, guid: 9260f15d0683a7a4d9da4d6c96f91508, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Table Legs
+    second: {fileID: 2100000, guid: 93c26b036d67a3346805056fd4a7420d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Table top
+    second: {fileID: 2100000, guid: 0ba47a255e9bc4944acb65e1792d6a44, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Table top.002
+    second: {fileID: 2100000, guid: 0ba47a255e9bc4944acb65e1792d6a44, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Wave Glass Walls
     second: {fileID: 2100000, guid: bd92be26972e46c40830bc1d672465bb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: White Walls
+    second: {fileID: 2100000, guid: 0c835ffe9a751c84bb7411cb573bdeb6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White Walls.001
+    second: {fileID: 2100000, guid: 0c835ffe9a751c84bb7411cb573bdeb6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White Wood
+    second: {fileID: 2100000, guid: 79436bd964bb53a4ab4f79b6225566a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteBoard
+    second: {fileID: 2100000, guid: 79335cdf78a4d274a9e623d81ec255b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Floor
+    second: {fileID: 2100000, guid: 59799ab8f8ace5e4ea85f72b7bf1ddc9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Floor.001
+    second: {fileID: 2100000, guid: 59799ab8f8ace5e4ea85f72b7bf1ddc9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Legs
+    second: {fileID: 2100000, guid: 1b487e339f3f6a84da9da68b9267e484, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Legs.002
+    second: {fileID: 2100000, guid: 1b487e339f3f6a84da9da68b9267e484, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Slats
+    second: {fileID: 2100000, guid: 1b487e339f3f6a84da9da68b9267e484, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: chair back
     second: {fileID: 2100000, guid: 62211c9b893d7cb44b9a2314edc05c90, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kichen cabanets
+    second: {fileID: 2100000, guid: 68395b9115ffd8849aa2695305640b52, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kitchen lamp cover
+    second: {fileID: 2100000, guid: 2ea35e2d0607d734dbc251c9e13e3d03, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: red Plastic
+    second: {fileID: 2100000, guid: a07ae71a095b9a341976976c783552e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skirting board
+    second: {fileID: 2100000, guid: d3bf083bc608b5c43b979033f71639d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skirting board.001
+    second: {fileID: 2100000, guid: d3bf083bc608b5c43b979033f71639d1, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

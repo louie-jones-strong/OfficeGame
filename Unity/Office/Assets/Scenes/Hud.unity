@@ -2269,6 +2269,7 @@ MonoBehaviour:
   TimerText: {fileID: 567007771}
   PartText: {fileID: 1373678779}
   EggCountText: {fileID: 428542577}
+  CrossHair: {fileID: 1862312984}
   InteractAnimator: {fileID: 1898311000}
   MenuAnimator: {fileID: 551786495}
   SfxSlider: {fileID: 635873624}

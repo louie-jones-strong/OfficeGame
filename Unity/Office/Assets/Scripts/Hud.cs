@@ -8,6 +8,7 @@ public class Hud : MonoBehaviour
 	[SerializeField] Text TimerText;
 	[SerializeField] Text PartText;
 	[SerializeField] Text EggCountText;
+	[SerializeField] GameObject CrossHair;
 
 	[SerializeField] Animator InteractAnimator;
 
@@ -63,6 +64,9 @@ public class Hud : MonoBehaviour
 
 	void Update()
 	{
+		CrossHair.SetActive(!MenuOpen && !GameOverOpen);
+
+
 		TimerText.text = TimeUtility.GetTimeString(PlayerController.CurrentPartTime);
 		PartText.text = EggManger.Instance.FindingMode ? "Find All the Eggs" : "Put all the eggs back";
 		EggCountText.text = $"EGGS: {EggManger.NumberOfEggsFound} / {EggManger.TotalNumberOfEggs}";

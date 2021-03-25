@@ -7,6 +7,16 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: AC
+    second: {fileID: 2100000, guid: 0ba47a255e9bc4944acb65e1792d6a44, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black Plastic
+    second: {fileID: 2100000, guid: 6063169641e068043a897e1fc4593fad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Frost Glass
     second: {fileID: 2100000, guid: 946de8399583b8a4b93c64a2af1b5b6c, type: 2}
   - first:
@@ -72,8 +82,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Mac
+    second: {fileID: 2100000, guid: 0a6ab514b3633134baae619ae5077ace, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Monitor Screen
     second: {fileID: 2100000, guid: 23c852f256f662d4f88bc807e742f21a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Monitor Screen Black
+    second: {fileID: 2100000, guid: 6063169641e068043a897e1fc4593fad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Monitor frame
+    second: {fileID: 2100000, guid: 6063169641e068043a897e1fc4593fad, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

@@ -1,13 +1,13 @@
 using System;
 using UnityEngine;
 
-// web site for refrance: 
+// web site for refrance:
 // https://docs.unity3d.com/Manual/PlatformDependentCompilation.html
 
 public class BuildTypeHider : MonoBehaviour
 {
 	[SerializeField] eBuildType ShowInBuildType;
-	
+
 	[Flags]
 	enum eBuildType
 	{
@@ -17,6 +17,7 @@ public class BuildTypeHider : MonoBehaviour
 		WebGl = 8,
 		Windows = 16,
 		Mac = 32,
+		Linux = 64,
 	}
 
 	void Awake()
@@ -60,6 +61,13 @@ public class BuildTypeHider : MonoBehaviour
 
 #if UNITY_STANDALONE_OSX
 		if (!ShowInBuildType.HasFlag(eBuildType.Mac))
+		{
+			shouldShow = false;
+		}
+#endif
+
+#if UNITY_STANDALONE_LINUX
+		if (!ShowInBuildType.HasFlag(eBuildType.Linux))
 		{
 			shouldShow = false;
 		}

@@ -45,12 +45,12 @@ public class PlayerController : MonoBehaviour
             CharacterController.enabled = true;
         }
 
-        var isWalking = Movement();
+        Movement();
 
         TryInteract();
     }
 
-    bool Movement()
+    void Movement()
     {
         // We are grounded, so recalculate move direction based on axes
         Vector3 forward = transform.TransformDirection(Vector3.forward);
@@ -58,7 +58,12 @@ public class PlayerController : MonoBehaviour
 
         float curSpeedX = CanMove ? WalkingSpeed * SimpleInput.GetInputValue(eInput.YMoveAxis): 0;
         float curSpeedY = CanMove ? WalkingSpeed * SimpleInput.GetInputValue(eInput.XMoveAxis) : 0;
-        float movementDirectionY = MoveDirection.y;
+        float movementDirectionY = CharacterController.velocity.y;
+        if (movementDirectionY > MoveDirection.y)
+        {
+            movementDirectionY = MoveDirection.y;
+        }
+
         MoveDirection = (forward * curSpeedX) + (right * curSpeedY);
 
         if (SimpleInput.GetInputActive(eInput.Jump) && CanMove && CharacterController.isGrounded)
@@ -92,8 +97,6 @@ public class PlayerController : MonoBehaviour
             }
             transform.rotation *= Quaternion.Euler(0, SimpleInput.GetInputValue(eInput.XLookAxis) * LookSpeed, 0);
         }
-
-        return (new Vector2(MoveDirection.x, MoveDirection.z)).magnitude >= 0.1f;
     }
 
     void TryInteract()

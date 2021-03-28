@@ -17,7 +17,7 @@ public class ControlSet
 
 	public void AddButton(eInput inputType, string buttonName)
 	{
-		Buttons[inputType] = new ButtonInfo(buttonName, Settings.DeadZone);
+		Buttons[inputType] = new ButtonInfo(buttonName, 0f);
 	}
 
 	public void Refresh(float deltaTime)

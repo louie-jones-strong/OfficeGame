@@ -13,7 +13,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Alpha
-    second: {fileID: 2100000, guid: c05fcc1ea5646074db21a3f0b52b22cc, type: 2}
+    second: {fileID: 2100000, guid: e925405c63ad6164e9e13a358a8fb3e5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -187,11 +187,6 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Roof Panel
-    second: {fileID: 2100000, guid: 5c072823603bb6d46b1c199915d04553, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: Table Hole Cover
     second: {fileID: 2100000, guid: 9260f15d0683a7a4d9da4d6c96f91508, type: 2}
   - first:
@@ -234,16 +229,6 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: WhiteBoard
     second: {fileID: 2100000, guid: 79335cdf78a4d274a9e623d81ec255b7, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Wood Floor
-    second: {fileID: 2100000, guid: 59799ab8f8ace5e4ea85f72b7bf1ddc9, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Wood Floor.001
-    second: {fileID: 2100000, guid: 59799ab8f8ace5e4ea85f72b7bf1ddc9, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

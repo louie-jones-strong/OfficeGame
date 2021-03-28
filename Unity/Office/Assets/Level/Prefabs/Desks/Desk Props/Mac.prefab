@@ -86,6 +86,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mac
       objectReference: {fileID: 0}
+    - target: {fileID: 5842797332823649101, guid: 580499638f07bf646b8acb8919da21c4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: -9.201035
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 580499638f07bf646b8acb8919da21c4, type: 3}
 --- !u!4 &1023163478866488426 stripped

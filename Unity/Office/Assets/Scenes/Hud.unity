@@ -5621,6 +5621,14 @@ PrefabInstance:
       propertyPath: m_Alpha
       value: 0.8
       objectReference: {fileID: 0}
+    - target: {fileID: 8086853489127716478, guid: a3ec6ced863fbd649aa3df2ee73e3357, type: 3}
+      propertyPath: m_Text
+      value: "Press \nE or Left Mouse Button "
+      objectReference: {fileID: 0}
+    - target: {fileID: 8086853489127716478, guid: a3ec6ced863fbd649aa3df2ee73e3357, type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8086853489638321961, guid: a3ec6ced863fbd649aa3df2ee73e3357, type: 3}
       propertyPath: m_Name
       value: ButtonReminder
@@ -5708,6 +5716,10 @@ PrefabInstance:
     - target: {fileID: 8086853489638321962, guid: a3ec6ced863fbd649aa3df2ee73e3357, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8086853489666187657, guid: a3ec6ced863fbd649aa3df2ee73e3357, type: 3}
+      propertyPath: m_Text
+      value: Pick Up Egg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3ec6ced863fbd649aa3df2ee73e3357, type: 3}

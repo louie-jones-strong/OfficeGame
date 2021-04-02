@@ -17,22 +17,22 @@ public class TimeUtility
 		var text = string.Empty;
 		if (mins > 0)
 		{
-			text = $"{mins}{MinutesSuffix} {secs}{SecondsSuffix}";
+			text = $"{mins}{MinutesSuffix} ";
 		}
-		else if (secs >= 10)
-		{
-			text = $"{secs}{SecondsSuffix}";
-		}
-		else
-		{
-			text = $"{Math.Round(totalSeconds, 1)}";
-			if (secs == Math.Round(totalSeconds, 1))
-			{
-				text += ".0";
-			}
 
-			text += $"{SecondsSuffix}";
+
+		text += $"{Math.Round(totalSeconds, 2)}";
+
+		if (totalSecondsInt == Math.Round(totalSeconds, 2))
+		{
+			text += ".00";
 		}
+		else if (Math.Round(totalSeconds, 1) == Math.Round(totalSeconds, 2))
+		{
+			text += "0";
+		}
+
+		text += $"{SecondsSuffix}";
 
 		return text;
 	}

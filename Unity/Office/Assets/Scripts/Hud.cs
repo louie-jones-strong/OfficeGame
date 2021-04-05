@@ -71,7 +71,7 @@ public class Hud : MonoBehaviour
 
 
 		TimerText.text = TimeUtility.GetTimeString(PlayerController.CurrentPartTime);
-		PartText.text = EggManger.Instance.FindingMode ? "Find All the Eggs" : "Put all the eggs back";
+		PartText.text = $"Part {EggManger.CurrentPart+1}: Find All the Eggs";
 		EggCountText.text = $"EGGS: {EggManger.NumberOfEggsFound} / {EggManger.TotalNumberOfEggs}";
 
 		if (!GameOverOpen && !MenuOpen && SimpleInput.IsInputInState(eInput.Esc, eButtonState.Pressed))
@@ -151,13 +151,13 @@ public class Hud : MonoBehaviour
 
 	public void UiPlayPart1()
 	{
-		EggManger.SetMode(true);
+		EggManger.SetPart(0);
 		MainManager.DoKickBack();
 	}
 
 	public void UiPlayPart2()
 	{
-		EggManger.SetMode(false);
+		EggManger.SetPart(1);
 		MainManager.DoKickBack();
 	}
 

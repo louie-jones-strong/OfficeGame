@@ -10,41 +10,23 @@ public class Egg : MonoBehaviour
 	public Collider EggCollider;
 	[SerializeField] ParticleSystem Particles;
 
+	public int Part;
+
 	public void Found()
 	{
-		if (EggManger.Instance.FindingMode && !IsFound)
+		if (!IsFound)
 		{
-			EggCollider.enabled = false;
 			SetShow(false);
 			IsFound = true;
 			AudioManger.PlayEvent("Collect", transform);
 
 			if (EggManger.NumberOfEggsFound >= EggManger.TotalNumberOfEggs)
 			{
-				var bestPart1Time = PlayerPrefsHelper.GetFloat(Settings.Part1BestTimePrefKey, -1f);
-				if (bestPart1Time < 0f || PlayerController.CurrentPartTime <= bestPart1Time)
+				var bestPartTime = PlayerPrefsHelper.GetFloat(EggManger.PartBestTimePrefKey, -1f);
+				if (bestPartTime < 0f || PlayerController.CurrentPartTime <= bestPartTime)
 				{
-					PlayerPrefsHelper.SetFloat(Settings.Part1BestTimePrefKey, PlayerController.CurrentPartTime);
+					PlayerPrefsHelper.SetFloat(EggManger.PartBestTimePrefKey, PlayerController.CurrentPartTime);
 				}
-				EggManger.SetMode(false);
-				Hud.Instance.SetGameOverShow(true);
-			}
-			Particles.Play();
-		}
-		else if (!EggManger.Instance.FindingMode && IsFound)
-		{
-			EggCollider.enabled = false;
-			SetShow(true);
-			IsFound = false;
-
-			if (EggManger.NumberOfEggsFound <= 0)
-			{
-				var bestPart2Time = PlayerPrefsHelper.GetFloat(Settings.Part2BestTimePrefKey, -1f);
-				if (bestPart2Time < 0f || PlayerController.CurrentPartTime <= bestPart2Time)
-				{
-					PlayerPrefsHelper.SetFloat(Settings.Part2BestTimePrefKey, PlayerController.CurrentPartTime);
-				}
-				EggManger.SetMode(true);
 				Hud.Instance.SetGameOverShow(true);
 			}
 			Particles.Play();
@@ -54,5 +36,11 @@ public class Egg : MonoBehaviour
 	public void SetShow(bool show)
 	{
 		VisualEggMesh.SetActive(show);
+		EggCollider.enabled = show;
+	}
+
+	public void SetPart(int part)
+	{
+		SetShow(Part == part);
 	}
 }

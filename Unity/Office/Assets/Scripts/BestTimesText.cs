@@ -13,22 +13,24 @@ public class BestTimesText : MonoBehaviour
 
 	void OnEnable()
 	{
-		float part1Time = PlayerPrefsHelper.GetFloat(Settings.Part1BestTimePrefKey, -1f);
+		var key = EggManger.GetPartBestTimePrefKey(0);
+		float part1Time = PlayerPrefsHelper.GetFloat(key, -1f);
 		bool hasPart1BestTime = part1Time >= 0f;
 
-		Part1BestTimeText.gameObject.SetActive(hasPart1BestTime);
+		Part1BestTimeText.text = $"Part 1 Best Time: ";
 		if (hasPart1BestTime)
 		{
-			Part1BestTimeText.text = $"Part 1 Best Time: {TimeUtility.GetTimeString(part1Time)}";
+			Part1BestTimeText.text += TimeUtility.GetTimeString(part1Time);
 		}
 
-		float part2Time = PlayerPrefsHelper.GetFloat(Settings.Part2BestTimePrefKey, -1f);
+		key = EggManger.GetPartBestTimePrefKey(1);
+		float part2Time = PlayerPrefsHelper.GetFloat(key, -1f);
 		bool hasPart2BestTime = part2Time >= 0f;
 
-		Part2BestTimeText.gameObject.SetActive(hasPart2BestTime);
+		Part2BestTimeText.text = $"Part 2 Best Time: ";
 		if (hasPart2BestTime)
 		{
-			Part2BestTimeText.text = $"Part 2 Best Time: {TimeUtility.GetTimeString(part2Time)}";
+			Part2BestTimeText.text += TimeUtility.GetTimeString(part2Time);
 		}
 	}
 }

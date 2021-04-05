@@ -6,49 +6,63 @@ public class EggManger : MonoBehaviour
 {
 	public static EggManger Instance;
 	public List<Egg> EggList;
-	public static int TotalNumberOfEggs {get {return Instance.EggList.Count;}}
-	public static int NumberOfEggsFound {get{return GetNumberOfEggs();}}
-	public bool FindingMode {private set; get;} = true;
-	static string FindModePrefKey = "IsFindMode";
+	public static int TotalNumberOfEggs {get {return GetTotalNumberOfEggs();}}
+	public static int NumberOfEggsFound {get{return GetNumberOfFoundEggs();}}
+	public static int CurrentPart {get; private set;}
+	public const int MaxPart = 1;
+
+	public static string PartBestTimePrefKey {get {return GetPartBestTimePrefKey(CurrentPart);}}
+
+	public static string GetPartBestTimePrefKey(int part)
+	{
+		return $"Part{part+1}BestTime";
+	}
 
 	void Awake()
 	{
 		Instance = this;
 
-		var mode = PlayerPrefsHelper.GetBool(FindModePrefKey, true);
-		if (FindingMode != mode)
+		var key = GetPartBestTimePrefKey(0);
+		if (PlayerPrefsHelper.GetFloat(key, -1f) >= 0)
 		{
-			SetMode(mode);
+			CurrentPart = 1;
 		}
+		SetPart(CurrentPart);
 	}
 
-	public static void SetMode(bool findMode)
-	{
-		findMode = true;
-		if (Instance.FindingMode == findMode)
-		{
-			return;
-		}
-		Instance.FindingMode = findMode;
-
-		foreach (var egg in Instance.EggList)
-		{
-			egg.EggCollider.enabled = true;
-			egg.SetShow(findMode);
-			egg.IsFound = !findMode;
-		}
-
-		PlayerPrefsHelper.SetBool(FindModePrefKey, findMode);
-	}
-
-	static int GetNumberOfEggs()
+	static int GetTotalNumberOfEggs()
 	{
 		int count = 0;
 		foreach (var egg in Instance.EggList)
 		{
-			count += egg.IsFound ? 1 : 0;
+			if (egg.Part == CurrentPart)
+			{
+				count += 1;
+			}
 		}
 		return count;
+	}
+
+	static int GetNumberOfFoundEggs()
+	{
+		int count = 0;
+		foreach (var egg in Instance.EggList)
+		{
+			if (egg.Part == CurrentPart)
+			{
+				count += egg.IsFound ? 1 : 0;
+			}
+		}
+		return count;
+	}
+
+	public static void SetPart(int part)
+	{
+		CurrentPart = part;
+		foreach (var item in Instance.EggList)
+		{
+			item.SetPart(CurrentPart);
+		}
 	}
 
 	void OnDestroy()

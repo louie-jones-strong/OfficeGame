@@ -12,8 +12,4 @@ public class Settings
 	public const string BootScreenName = "Boot";
 	public const string HudScreenName = "Hud";
 	public const string InGameScreenName = "SampleScene";
-
-
-	public const string Part1BestTimePrefKey = "Part1BestTime";
-	public const string Part2BestTimePrefKey = "Part2BestTime";
 }

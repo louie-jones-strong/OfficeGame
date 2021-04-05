@@ -11,7 +11,7 @@ public class TimeUtility
 	public static string GetTimeString(float totalSeconds)
 	{
 		var totalSecondsInt = Mathf.RoundToInt(totalSeconds);
-		var secs = totalSecondsInt % 60;
+		var secs = totalSeconds % 60;
 		var mins = (totalSecondsInt / 60) % 60;
 
 		var text = string.Empty;
@@ -21,13 +21,13 @@ public class TimeUtility
 		}
 
 
-		text += $"{Math.Round(totalSeconds, 2)}";
+		text += $"{Math.Round(secs, 2)}";
 
-		if (totalSecondsInt == Math.Round(totalSeconds, 2))
+		if (totalSecondsInt == Math.Round(secs, 2))
 		{
 			text += ".00";
 		}
-		else if (Math.Round(totalSeconds, 1) == Math.Round(totalSeconds, 2))
+		else if (Math.Round(secs, 1) == Math.Round(secs, 2))
 		{
 			text += "0";
 		}

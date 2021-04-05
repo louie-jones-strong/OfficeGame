@@ -83,7 +83,9 @@ public class Hud : MonoBehaviour
 			SetMenuShow(!MenuOpen);
 		}
 
-		bool hasFinishedPart1 = false;
+		var key = EggManger.GetPartBestTimePrefKey(0);
+		float part1Time = PlayerPrefsHelper.GetFloat(key, -1f);
+		bool hasFinishedPart1 = part1Time >= 0f;
 
 		RestartButton.gameObject.SetActive(!hasFinishedPart1);
 		PlayPart1Button.gameObject.SetActive(hasFinishedPart1);

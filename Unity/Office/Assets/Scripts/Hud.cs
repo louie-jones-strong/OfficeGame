@@ -25,6 +25,9 @@ public class Hud : MonoBehaviour
 	[SerializeField] Button RestartButton;
 	[SerializeField] Button PlayPart1Button;
 	[SerializeField] Button PlayPart2Button;
+	[SerializeField] Text VersionNumber;
+
+	[SerializeField] PatchNotesPopup PatchNotesPopup;
 
 
 	[Header("Game Over")]
@@ -54,6 +57,7 @@ public class Hud : MonoBehaviour
 		var sensitivity = PlayerPrefsHelper.GetFloat("Sensitivity", 0.5f);
 		UiSensitivityUpdated(sensitivity);
 		SensitivitySlider.SetValueWithoutNotify(sensitivity);
+		VersionNumber.text = $"version: {Application.version}";
 
 	}
 
@@ -71,7 +75,7 @@ public class Hud : MonoBehaviour
 
 
 		TimerText.text = TimeUtility.GetTimeString(PlayerController.CurrentPartTime);
-		PartText.text = $"Part {EggManger.CurrentPart+1}: Find All the Eggs";
+		PartText.text = $"Level {EggManger.CurrentPart+1}: Find All the Eggs";
 		EggCountText.text = $"EGGS: {EggManger.NumberOfEggsFound} / {EggManger.TotalNumberOfEggs}";
 
 		if (!GameOverOpen && !MenuOpen && SimpleInput.IsInputInState(eInput.Esc, eButtonState.Pressed))
@@ -119,6 +123,7 @@ public class Hud : MonoBehaviour
 		if (MenuOpen)
 		{
 			SetMenuShow(false);
+			PatchNotesPopup.SetShowing(false);
 		}
 	}
 
@@ -175,6 +180,11 @@ public class Hud : MonoBehaviour
 		UiSensitivityUpdated(sensitivity);
 
 		MainManager.DoKickBack();
+	}
+
+	public void UiPatchNotes()
+	{
+		PatchNotesPopup.SetShowing(true);
 	}
 
 	public void UiToggleInvertMouseY(bool value)

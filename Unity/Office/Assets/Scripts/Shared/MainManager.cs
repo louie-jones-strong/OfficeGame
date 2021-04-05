@@ -22,6 +22,7 @@ public class MainManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+            PatchNotes.GameBooted();
             DoKickBack();
         }
         else

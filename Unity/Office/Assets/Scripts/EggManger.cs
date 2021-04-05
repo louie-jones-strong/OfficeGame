@@ -8,7 +8,7 @@ public class EggManger : MonoBehaviour
 	public List<Egg> EggList;
 	public static int TotalNumberOfEggs {get {return GetTotalNumberOfEggs();}}
 	public static int NumberOfEggsFound {get{return GetNumberOfFoundEggs();}}
-	public static int CurrentPart {get; private set;}
+	public static int CurrentPart {get; private set;} = -1;
 	public const int MaxPart = 1;
 
 	public static string PartBestTimePrefKey {get {return GetPartBestTimePrefKey(CurrentPart);}}
@@ -22,11 +22,16 @@ public class EggManger : MonoBehaviour
 	{
 		Instance = this;
 
-		var key = GetPartBestTimePrefKey(0);
-		if (PlayerPrefsHelper.GetFloat(key, -1f) >= 0)
+		if (CurrentPart == -1)
 		{
-			CurrentPart = 1;
+			CurrentPart = 0;
+			var key = GetPartBestTimePrefKey(0);
+			if (PlayerPrefsHelper.GetFloat(key, -1f) >= 0)
+			{
+				CurrentPart = 1;
+			}
 		}
+
 		SetPart(CurrentPart);
 	}
 
@@ -58,6 +63,7 @@ public class EggManger : MonoBehaviour
 
 	public static void SetPart(int part)
 	{
+		part = Mathf.Clamp(part, 0, MaxPart);
 		CurrentPart = part;
 		foreach (var item in Instance.EggList)
 		{

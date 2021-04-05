@@ -28,6 +28,7 @@ public class Egg : MonoBehaviour
 					PlayerPrefsHelper.SetFloat(EggManger.PartBestTimePrefKey, PlayerController.CurrentPartTime);
 				}
 				Hud.Instance.SetGameOverShow(true);
+				EggManger.SetPart(EggManger.CurrentPart + 1);
 			}
 			Particles.Play();
 		}

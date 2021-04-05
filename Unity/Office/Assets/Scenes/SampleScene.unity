@@ -25381,6 +25381,24 @@ ReflectionProbe:
   m_UseOcclusionCulling: 1
   m_Importance: 1
   m_CustomBakedTexture: {fileID: 0}
+--- !u!1 &1674972664 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8391222552659086748, guid: b7b5680e6f9b2b14eb1ae77171fe7458, type: 3}
+  m_PrefabInstance: {fileID: 1866667287}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1674972665
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674972664}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02, y: 0.019999998, z: 0.020000027}
+  m_Center: {x: 0.0000000037252903, y: 0, z: -0.000000014901161}
 --- !u!114 &1677447561 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3112722393715208016, guid: 65d40cc305eaeed49aaef5afae7697e4, type: 3}

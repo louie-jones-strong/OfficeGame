@@ -20,6 +20,7 @@ public class Hud : MonoBehaviour
 	[SerializeField] Slider MusicSlider;
 	[SerializeField] Slider AmbienceSlider;
 	[SerializeField] Slider SensitivitySlider;
+	[SerializeField] Toggle ToggleMouseInvert;
 
 	[SerializeField] Button RestartButton;
 	[SerializeField] Button PlayPart1Button;
@@ -47,6 +48,8 @@ public class Hud : MonoBehaviour
 		SfxSlider.SetValueWithoutNotify(AudioManger.SfxVolume);
 		MusicSlider.SetValueWithoutNotify(AudioManger.MusicVolume);
 		AmbienceSlider.SetValueWithoutNotify(AudioManger.AmbienceVolume);
+
+		ToggleMouseInvert.SetIsOnWithoutNotify(PlayerController.InvertedMouseY);
 
 		var sensitivity = PlayerPrefsHelper.GetFloat("Sensitivity", 0.5f);
 		UiSensitivityUpdated(sensitivity);
@@ -172,6 +175,11 @@ public class Hud : MonoBehaviour
 		UiSensitivityUpdated(sensitivity);
 
 		MainManager.DoKickBack();
+	}
+
+	public void UiToggleInvertMouseY(bool value)
+	{
+		PlayerController.InvertedMouseY = value;
 	}
 
 	public void UiSFXVolume(float value)

@@ -18,6 +18,10 @@ public class PlayerController : MonoBehaviour
 
     public static bool CanMove {get {return !(Hud.Instance.MenuOpen || Hud.Instance.GameOverOpen);}}
 
+    public static bool InvertedMouseY {
+        get {return PlayerPrefsHelper.GetBool("InvertedMouseY", false);}
+        set {PlayerPrefsHelper.SetBool("InvertedMouseY", value);}}
+
     public static float CurrentPartTime {private set; get;}
     Vector3 StartPos;
 
@@ -89,7 +93,7 @@ public class PlayerController : MonoBehaviour
         // Player and Camera rotation
         if (CanMove)
         {
-            RotationX += -SimpleInput.GetInputValue(eInput.YLookAxis) * LookSpeed;
+            RotationX += -SimpleInput.GetInputValue(eInput.YLookAxis) * LookSpeed * (InvertedMouseY ? -1 : 1);
             RotationX = Mathf.Clamp(RotationX, -LookXLimit, LookXLimit);
             foreach (var camera in PlayerCameras)
             {

@@ -86,6 +86,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: KeyBoard
       objectReference: {fileID: 0}
+    - target: {fileID: 3438558413686192126, guid: 962e88bf62617cd46aa58008e14c27ba, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4ff9bb84553ee5848835a8cd5f4127bc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 962e88bf62617cd46aa58008e14c27ba, type: 3}
 --- !u!4 &104002117309777491 stripped
